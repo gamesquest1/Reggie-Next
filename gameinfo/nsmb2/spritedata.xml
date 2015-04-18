@@ -1875,13 +1875,33 @@
 	<value nybble="10" title="Unknown Value 10" comment="..." />
   </sprite>
   <sprite id="312" name="Inventory Disable (?)" notes="Used without data in all cannons and rainbow levels..." />
-  <sprite id="313" name="Moving Block (Decoration?)" >
+ <sprite id="313" name=" Vertical Moving Block (blue/underwater)" >
 	<value nybble="1" title="Unknown Value 1" comment="..." />
 	<value nybble="2" title="Unknown Value 2" comment="..." />
 	<value nybble="6" title="Unknown Value 6" comment="..." />
 	<value nybble="11" title="Unknown Value 11" comment="Always 2..." />
-	<value nybble="12" title="Unknown Value 12" comment="..." />
-	<value nybble="14" title="Unknown Value 14" comment="Checkbox?" />
+	<list nybble="12" title="Movement Direction and layer" comment="..." >
+      <entry value="0">Right (Behind scene)</entry>
+      <entry value="1">Left (Behind scene)</entry>
+	  <entry value="2">Up (Behind scene)</entry>
+	  <entry value="3">Down (Behind scene)</entry>
+	  <entry value="4">Right (Forground)</entry>
+      <entry value="5">Left (Forground)</entry>
+	  <entry value="6">Up (Forground)</entry>
+	  <entry value="7">Down (Forground)</entry>
+    </list>
+	<list nybble="14" title="Block Width" comment="..." >
+      <entry value="0">2 blocks wide</entry>
+      <entry value="1">4 blocks wide</entry>
+    </list>
+	<value nybble="17" title="moving distance" comment="1=1 block width 15=15" />
+	<list nybble="18" title="Speed" comment="..." >
+      <entry value="0">slow</entry>
+      <entry value="1">slowish</entry>
+	  <entry value="2">Normal</entry>
+	  <entry value="3">Speedy</entry>
+	  <entry value="4">Fastest (slight glitching)</entry>
+    </list>
   </sprite>
   <sprite id="314" name="Wheel Platform (Three)" >
 	<value nybble="6" title="Unknown Value 6" comment="Slower? Hold Pokeys/Sprites? Always 1..." />
